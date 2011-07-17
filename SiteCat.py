@@ -94,11 +94,13 @@ for dhost in  xmldoc.getElementsByTagName('host'):
 		
 		hostUrl = writeUrl(port, interestingPorts)
 		if (hostUrl):
+			print hostUrl
 			writeIframe(hostUrl, outputFile)
 			outfile = ipAddress + ".png"
+			print outfile
 			hostUrlList = [hostUrl]
-		grabScreen(hostUrlList)	
-			
+			print hostUrlList
+			grabScreen(hostUrlList)			
 			
 
 
